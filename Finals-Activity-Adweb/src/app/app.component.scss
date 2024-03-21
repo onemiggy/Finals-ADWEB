@@ -1,0 +1,60 @@
+// Define colors
+$purple: #8a4baf;
+$mango: #ffa726;
+$violet: 	#7F00FF; 
+// Navbar container
+.custom-navbar {
+  background-color: $violet;
+  border-bottom: 1px solid $mango;
+
+  // Navbar brand
+  &-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+    // Navbar title
+    &-title {
+      font-size: 1.5rem;
+      color: #ffa726; // White color for title
+    }
+  }
+
+  // Navbar toggle button
+  &-toggle {
+    display: none; // Hide toggle button by default
+  }
+
+  // Navbar menu
+  &-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  // Navbar list
+  &-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  // Navbar item
+  &-item {
+    margin-right: 1rem;
+
+    // Navbar link
+    a {
+      color: #ffffff; // White color for links
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $mango; // Change link color on hover
+      }
+    }
+  }
+}
